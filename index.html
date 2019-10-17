@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Челмедведосвин</title>
+    <title>И шо ты тут забыл?</title>
 </head>
 
 <body>
@@ -14,9 +14,15 @@
 
 <script>
     "use_strict"
-    let term = prompt('Александр Головин - человек и..?' , 'Запишите ваш ответ с большой буквы')
-    if (term == 'Паладин') alert ('Нежить в ужасе бежит!')
-    else alert ('Ты ошибился, пёс')
+    let age = prompt('Возраст?', 18);
+
+    let message = (age < 10) ? 'Ты мал' :
+        (age < 18) ? 'Ты юн' :
+        (age < 60) ? 'Ты зрел' :
+        (age < 100) ? 'Ты стар' :
+        'Ты суперстар'
+
+    alert( message );
 </script>
 
 <p> После скрипта говорю "Опа!" </p>
