@@ -16,7 +16,8 @@
     "use_strict"
     let age = prompt('Возраст?', 18);
 
-    let message = (age < 10) ? 'Ты мал' :
+let message = (age == null) ? 'Что-то здесь не так...' :
+        (age < 10) ? 'Ты мал' :
         (age < 18) ? 'Ты юн' :
         (age < 60) ? 'Ты зрел' :
         (age < 100) ? 'Ты стар' :
