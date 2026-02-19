@@ -1,6 +1,6 @@
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@$%&*";
 
-function typeScramble(text, container, speed = 15, scrambleTime = 200) {
+function typeScramble(text, container, speed = 10, scrambleTime = 200) {
 
   return new Promise(resolve => {
 
