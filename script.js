@@ -1,6 +1,6 @@
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@$%&*";
 
-function typeScramble(text, container, speed = 25, scrambleTime = 200) {
+function typeScramble(text, container, speed = 15, scrambleTime = 200) {
 
   return new Promise(resolve => {
 
@@ -47,10 +47,10 @@ function typeScramble(text, container, speed = 25, scrambleTime = 200) {
 
 async function fakeLoading(){
 
-  await typeLine("СКАНИРОВАНИЕ СВЯЩЕННЫХ ЭНГРАММ");
-  await typeLine("ДЕШИФРОВКА БЛОКА ДАННЫХ");
-  await typeLine("ОБРАЩЕНИЕ К ДУХУ МАШИНЫ");
-  await typeLine("ПРОВЕРКА ЛИЧНОСТИ");
+  await typeLine("+ СКАНИРОВАНИЕ СВЯЩЕННЫХ ЭНГРАММ +");
+  await typeLine("+ ДЕШИФРОВКА БЛОКА ДАННЫХ +");
+  await typeLine("+ ОБРАЩЕНИЕ К ДУХУ МАШИНЫ +");
+  await typeLine("+ ПРОВЕРКА ЛИЧНОСТИ +");
 }
 
 async function typeLine(text){
@@ -87,13 +87,13 @@ async function processCommand(text) {
 
   await fakeLoading();   // ← ВОТ ТУТ
 
-  await typeLine("ДОСТУП ЗАПРЕЩЕН");
+  await typeLine("+ ДОСТУП ЗАПРЕЩЕН +");
 
-  await typeLine("ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ");
+  await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +");
 
-  await typeLine("СИЛЫ СВЯЩЕННОГО ОРДО ЕРЕТИКУС ИМПЕРСКОЙ ИНКВИЗИЦИИ ПОСТАВЛЕНЫ В ИЗВЕСТНОСТЬ");
+  await typeLine("+ СИЛЫ СВЯЩЕННОГО ОРДО ЕРЕТИКУС ИМПЕРСКОЙ ИНКВИЗИЦИИ ПОСТАВЛЕНЫ В ИЗВЕСТНОСТЬ +");
   
-  await typeLine("ВОЗНОСИТЕ МОЛЬБЫ ИМПЕРАТОРУ И СМИРЕННО ОЖИДАЙТЕ СВОЕЙ УЧАСТИ");
+  await typeLine("+ ВОЗНОСИТЕ МОЛЬБЫ ИМПЕРАТОРУ И СМИРЕННО ОЖИДАЙТЕ СВОЕЙ УЧАСТИ +");
 
   input.disabled = false;
 }
