@@ -47,10 +47,10 @@ function typeScramble(text, container, speed = 25, scrambleTime = 200) {
 
 async function fakeLoading(){
 
-  await typeLine("SCANNING ARCHIVE NODE");
-  await typeLine("DECRYPTING BLOCK");
-  await typeLine("VERIFYING CLEARANCE");
-  await typeLine("AUTH CHECK");
+  await typeLine("СКАНИРОВАНИЕ СВЯЩЕННЫХ ЭНГРАММ");
+  await typeLine("ДЕШИФРОВКА БЛОКА ДАННЫХ");
+  await typeLine("ОБРАЩЕНИЕ К ДУХУ МАШИНЫ");
+  await typeLine("ПРОВЕРКА ЛИЧНОСТИ");
 }
 
 async function typeLine(text){
@@ -87,7 +87,13 @@ async function processCommand(text) {
 
   await fakeLoading();   // ← ВОТ ТУТ
 
-  await typeLine("ACCESS DENIED");
+  await typeLine("ДОСТУП ЗАПРЕЩЕН");
+
+  await typeLine("ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ");
+
+  await typeLine("СИЛЫ СВЯЩЕННОГО ОРДО ЕРЕТИКУС ИМПЕРСКОЙ ИНКВИЗИЦИИ ПОСТАВЛЕНЫ В ИЗВЕСТНОСТЬ");
+  
+  await typeLine("ВОЗНОСИТЕ МОЛЬБЫ ИМПЕРАТОРУ И СМИРЕННО ОЖИДАЙТЕ СВОЕЙ УЧАСТИ");
 
   input.disabled = false;
 }
