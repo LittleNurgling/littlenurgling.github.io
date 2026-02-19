@@ -26,12 +26,3 @@ body {
   );
 }
 
-/* flicker */
-.crt {
-  animation: flicker 2s infinite;
-}
-
-@keyframes flicker {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(0.8); }
-}
