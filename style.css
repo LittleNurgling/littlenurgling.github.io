@@ -36,3 +36,6 @@ body {
   50% { filter: brightness(0.8); }
 }
 
+.crt {
+  background:#001100;
+}
