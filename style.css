@@ -35,3 +35,34 @@ body {
   0%, 100% { filter: brightness(1); }
   50% { filter: brightness(0.8); }
 }
+
+/* TERMINAL */
+.terminal {
+  max-width: 600px;
+}
+
+#output {
+  margin-bottom: 1rem;
+  white-space: pre-line;
+}
+
+.input-line {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.input-line span {
+  text-shadow: 0 0 6px #3cff3c;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #7CFF7C;
+  font-family: monospace;
+  font-size: 1rem;
+  flex: 1;
+  text-shadow: 0 0 6px #3cff3c;
+}
