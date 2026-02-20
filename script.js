@@ -53,11 +53,11 @@ async function fakeLoading(){
   await typeLine("+ ПРОВЕРКА ЛИЧНОСТИ +");
 }
 
-async function typeLine(text){
+async function typeLine(text, speed = 10, scrambleTime = 200){
   const line = document.createElement("div");
   output.appendChild(line);
 
-  await typeScramble(text, line);
+  await typeScramble(text, line, speed, scrambleTime);
 
   await sleep(300);
 }
@@ -87,13 +87,13 @@ async function processCommand(text) {
 
   await fakeLoading();   // ← ВОТ ТУТ
 
-  await typeLine("+ ДОСТУП ЗАПРЕЩЕН +", speed = 1, scrambleTime = 1);
+  await typeLine("+ ДОСТУП ЗАПРЕЩЕН +", 1, 1);
 
-  await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +", speed = 1, scrambleTime = 1);
+  await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +", 1, 1);
 
-  await typeLine("+ СИЛЫ СВЯЩЕННОГО ОРДО ЕРЕТИКУС ИМПЕРСКОЙ ИНКВИЗИЦИИ ПОСТАВЛЕНЫ В ИЗВЕСТНОСТЬ +", speed = 1, scrambleTime = 1);
+  await typeLine("+ СИЛЫ СВЯЩЕННОГО ОРДО ЕРЕТИКУС ИМПЕРСКОЙ ИНКВИЗИЦИИ ПОСТАВЛЕНЫ В ИЗВЕСТНОСТЬ +", 1, 1);
   
-  await typeLine("+ ВОЗНОСИТЕ МОЛЬБЫ ИМПЕРАТОРУ И СМИРЕННО ОЖИДАЙТЕ СВОЕЙ УЧАСТИ +", speed = 1, scrambleTime = 1);
+  await typeLine("+ ВОЗНОСИТЕ МОЛЬБЫ ИМПЕРАТОРУ И СМИРЕННО ОЖИДАЙТЕ СВОЕЙ УЧАСТИ +", 1, 1);
 
   input.disabled = false;
 }
