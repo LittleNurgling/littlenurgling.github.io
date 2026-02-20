@@ -11,8 +11,8 @@ loadBtn.addEventListener("click", async () => {
   document.getElementById("back-container").style.display = "block";
 
   // Показываем терминал (текущий output)
-  const output = document.getElementById("output");
-  output.textContent = "+++ ТЕРМИНАЛГОТОВ +++\n> ";
+  const show_output = document.getElementById("output");
+  show_output.textContent = "+++ ТЕРМИНАЛГОТОВ +++\n> ";
 
   const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@$%&*";
 
@@ -134,8 +134,8 @@ newBtn.addEventListener("click", async () => {
   content.style.display = "block";
   document.getElementById("back-container").style.display = "block";
 
-  const output = document.getElementById("output");
-  output.textContent = "+ НОВЫЙ АКОЛИТ ОБНАРУЖЕН +\n+ В БУДУЩЕМ ЗДЕСЬ БУДЕТ ГЕНЕРАЦИЯ ПЕРСОНАЖА +";
+  const show_output = document.getElementById("output");
+  show_output.textContent = "+ НОВЫЙ АКОЛИТ ОБНАРУЖЕН +\n+ В БУДУЩЕМ ЗДЕСЬ БУДЕТ ГЕНЕРАЦИЯ ПЕРСОНАЖА +";
 });
 
 // Кнопка "Назад"
