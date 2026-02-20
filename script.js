@@ -127,7 +127,7 @@ async function processCommand(text) {
   } else if(pattern_biggus.test(text)) {
     await typeLine("+ ПЕРЕХОДИМ К ТЕСТОВОЙ КАРТОЧКЕ +", 5, 5);
     await typeLine("+ БУДЬТЕ ГОТОВЫ КО ВСЕМУ +", 5, 5);
-    window.location.href = "./character_dataslate.html"
+    window.location.href = "./char_test_123.html"
   } else {
   await typeLine("+ ДОСТУП ЗАПРЕЩЕН +", 1, 1, "#cc0000");
   await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +", 1, 1, "#cc0000");
