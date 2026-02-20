@@ -21,7 +21,7 @@ body {
   text-align: center;    /* текст по центру */
 }
 
-.menu-buttons {
+#menu-buttons {
   display: flex;
   justify-content: center; /* центрируем весь блок */
   gap: 4rem;               /* расстояние между блоками */
