@@ -21,6 +21,52 @@ body {
   text-align: center;    /* текст по центру */
 }
 
+.menu-buttons {
+  display: flex;
+  justify-content: center; /* центрируем весь блок */
+  gap: 4rem;               /* расстояние между блоками */
+  margin-top: 2rem;
+  flex-wrap: wrap;          /* на узких экранах перенос */
+}
+
+/* каждый блок кнопки с подписью */
+.button-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* подпись под кнопкой по центру */
+}
+
+/* сама кнопка */
+.button-block button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #0b2005; /* тёмно-зелёная под WH40k */
+  color: #7cff7c;            /* светящийся зелёный */
+  border: 2px solid #7cff7c;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+/* эффект наведения */
+.button-block button:hover {
+  background-color: #7cff7c;
+  color: #0b2005;
+  box-shadow: 0 0 12px #7cff7c;
+}
+
+/* подпись под кнопкой */
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-style: italic;
+  text-align: center;
+  max-width: 180px;
+}
+
 .crt {
   position: relative;
   color: #7CFF7C;
