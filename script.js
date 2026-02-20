@@ -124,7 +124,7 @@ async function processCommand(text) {
   } else if(pattern_hydra.test(text)) {
     await typeLine("+ ГИДРА ДОМИНАТУС, БРАТ +", 1, 1);
     await typeLine("+ ПРЕДОСТАВЛЯЮ ПОЛНЫЙ ДОСТУП +", 1, 1);
-  } else if(pattern_biggus.text(text)) {
+  } else if(pattern_biggus.test(text)) {
     await typeLine("+ ПЕРЕХОДИМ К ТЕСТОВОЙ КАРТОЧКЕ +", 5, 5);
     await typeLine("+ БУДЬТЕ ГОТОВЫ КО ВСЕМУ +", 5, 5);
     window.location.href = "./character_dataslate.html"
