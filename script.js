@@ -114,11 +114,15 @@ async function processCommand(text) {
 
   await fakeLoading();   // ← ВОТ ТУТ
 
-  const pattern = /САНЯ|САША|САНЁК|АЛЕКСАНДР/i;
+  const pattern_sasha = /САНЯ|САША|САНЁК|АЛЕКСАНДР/i;
+  const pattern_hydra = /ГИДРА|АЛЬФА-|АЛЬФАР|ОМЕГО/i;
 
-  if(pattern.test(text)) {
+  if(pattern_sasha.test(text)) {
     await typeLine("+ ДОСТУП РАЗРЕШЕН +", 1, 1);
     await typeLine("+ ИМПЕРАТОР ГОРДИТСЯ ВАМИ, ОЖИДАЙТЕ МИСКА АМАСЕКА И ЭЛЬДАРКА-ЖЕНА +", 1, 1);
+  } else if(pattern_hydra.test(text)) {
+    await typeLine("+ ГИДРА ДОМИНАТУС, БРАТ +", 1, 1);
+    await typeLine("+ ПРЕДОСТАВЛЯЮ ПОЛНЫЙ ДОСТУП +", 1, 1);
   } else {
   await typeLine("+ ДОСТУП ЗАПРЕЩЕН +", 1, 1, "#cc0000");
   await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +", 1, 1, "#cc0000");
