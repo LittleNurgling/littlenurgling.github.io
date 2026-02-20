@@ -1,0 +1,77 @@
+/* Общие настройки */
+body {
+  margin: 0;
+  font-family: "Courier New", monospace;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Заголовок */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #bbbbbb;
+}
+
+/* Кнопки проектов */
+.projects-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-button button {
+  background-color: #1e1e1e;
+  border: 2px solid #7CFF7C;
+  color: #7CFF7C;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.project-button button:hover {
+  background-color: #7CFF7C;
+  color: #1e1e1e;
+}
+
+.subtitle {
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  color: #bbbbbb;
+  text-align: center;
+}
+
+/* Футер */
+.footer {
+  margin-top: auto;
+  text-align: center;
+  color: #555555;
+  font-size: 0.8rem;
+}
