@@ -1,5 +1,6 @@
 const terminalContainer = document.getElementById("terminal-container");
 const creationContainer = document.getElementById("creation-container");
+const backContainer = document.getElementById("back-container");
 const loadBtn = document.getElementById("loadCharBtn");
 const newBtn = document.getElementById("newCharBtn");
 const backBtn = document.getElementById("backBtn");
@@ -11,7 +12,8 @@ loadBtn.addEventListener("click", async () => {
   menu.style.display = "none";
   content.style.display = "block";
   backBtn.style.display = "block";
-
+  
+  backContainer.style.display = "block";
   terminalContainer.style.display = "block";
   creationContainer.style.display = "none";
 
@@ -136,6 +138,7 @@ newBtn.addEventListener("click", async () => {
   menu.style.display = "none";
   content.style.display = "block";
   backBtn.style.display = "block";
+  backContainer.style.display = "block";
   terminalContainer.style.display = "none";
   creationContainer.style.display = "block";
 
@@ -146,7 +149,8 @@ backBtn.addEventListener("click", () => {
   menu.style.display = "flex";
   content.style.display = "none";
   backBtn.style.display = "none";
-
+  
+  backContainer.style.display = "block";
   terminalContainer.style.display = "none";
   creationContainer.style.display = "none";
 });
