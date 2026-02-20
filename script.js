@@ -13,7 +13,7 @@ loadBtn.addEventListener("click", async () => {
   content.style.display = "block";
   backBtn.style.display = "block";
   
-  backContainer.style.display = "block";
+  backContainer.style.display = "flex";
   terminalContainer.style.display = "block";
   creationContainer.style.display = "none";
 
@@ -138,7 +138,7 @@ newBtn.addEventListener("click", async () => {
   menu.style.display = "none";
   content.style.display = "block";
   backBtn.style.display = "block";
-  backContainer.style.display = "block";
+  backContainer.style.display = "flex";
   terminalContainer.style.display = "none";
   creationContainer.style.display = "block";
 
@@ -150,7 +150,7 @@ backBtn.addEventListener("click", () => {
   content.style.display = "none";
   backBtn.style.display = "none";
   
-  backContainer.style.display = "block";
+  backContainer.style.display = "flex";
   terminalContainer.style.display = "none";
   creationContainer.style.display = "none";
 });
