@@ -86,6 +86,11 @@ body {
   margin-top: 1rem;
 }
 
+#creation-container {
+  display: none;
+  justify-content: center;
+}
+
 /* маленькая кнопка "назад" */
 .small-btn {
   padding: 0.3rem 0.8rem;
