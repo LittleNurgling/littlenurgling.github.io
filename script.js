@@ -101,7 +101,7 @@ async function processCommand(text) {
 }
   
   input.disabled = false;
-
+}
 
 function scrollToBottom(){
   output.scrollTop = output.scrollHeight;
