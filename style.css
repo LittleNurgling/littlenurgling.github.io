@@ -80,38 +80,31 @@ body {
   }
 }
 
+/* маленькая кнопка "назад" */
+.small-btn {
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background-color: #0b2005;
+  color: #7cff7c;
+  border: 2px solid #7cff7c;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.small-btn:hover {
+  background-color: #7cff7c;
+  color: #0b2005;
+  box-shadow: 0 0 8px #7cff7c;
+}
+
 .crt {
   position: relative;
   color: #7CFF7C;
   font-family: monospace;
   text-shadow: 0 0 6px #3cff3c;
   padding: 2rem;
-}
-
-/* scanlines */
-.crt::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(0,0,0,0) 0px,
-    rgba(0,0,0,0) 2px,
-    rgba(0,0,0,0.25) 3px,
-    rgba(0,0,0,0.25) 4px
-  );
-}
-
-/* flicker */
-.crt {
-  animation: flicker 2s infinite;
-}
-
-@keyframes flicker {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(0.8); }
 }
 
 /* TERMINAL */
@@ -144,3 +137,31 @@ input {
   flex: 1;
   text-shadow: 0 0 6px #3cff3c;
 }
+
+/* scanlines */
+.crt::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0px,
+    rgba(0,0,0,0) 2px,
+    rgba(0,0,0,0.25) 3px,
+    rgba(0,0,0,0.25) 4px
+  );
+}
+
+/* flicker */
+.crt {
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(0.8); }
+}
+
+
