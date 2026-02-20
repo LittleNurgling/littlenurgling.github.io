@@ -1,3 +1,5 @@
+const terminalContainer = document.getElementById("terminal-container");
+const creationContainer = document.getElementById("creation-container");
 const loadBtn = document.getElementById("loadCharBtn");
 const newBtn = document.getElementById("newCharBtn");
 const backBtn = document.getElementById("backBtn");
@@ -8,9 +10,11 @@ const content = document.getElementById("content-container");
 loadBtn.addEventListener("click", async () => {
   menu.style.display = "none";
   content.style.display = "block";
-  document.getElementById("back-container").style.display = "block";
+  backBtn.style.display = "block";
 
-  // Показываем терминал (текущий output)
+  terminalContainer.style.display = "block";
+  creationContainer.style.display = "none";
+
   const show_output = document.getElementById("output");
   show_output.textContent = "+++ ТЕРМИНАЛ ВВОДА ДАННЫХ ПОДГОТОВЛЕН +++\n +  ОЖИДАНИЕ: КОД ДОСТУПА: УРОВЕНЬ ^БЕТА^  +> ";
 
@@ -131,17 +135,20 @@ function scrollToBottom(){
 newBtn.addEventListener("click", async () => {
   menu.style.display = "none";
   content.style.display = "block";
-  document.getElementById("back-container").style.display = "block";
+  backBtn.style.display = "block";
+  terminalContainer.style.display = "none";
+  creationContainer.style.display = "block";
 
-  const show_output = document.getElementById("output");
-  show_output.textContent = "+ ПРИВЕТСТВУЕМ НОВОГО АКОЛИТА СВЯЩЕННЫХ ОРДОСОВ +\n+ СИСТЕМА РЕГИСТРАЦИИ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ +";
 });
 
 // Кнопка "Назад"
 backBtn.addEventListener("click", () => {
   menu.style.display = "flex";
   content.style.display = "none";
-  document.getElementById("back-container").style.display = "none";
+  backBtn.style.display = "none";
+
+  terminalContainer.style.display = "none";
+  creationContainer.style.display = "none";
 });
 
 
