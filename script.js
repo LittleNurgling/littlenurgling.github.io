@@ -12,9 +12,11 @@ loadBtn.addEventListener("click", async () => {
 
   // Показываем терминал (текущий output)
   const show_output = document.getElementById("output");
-  show_output.textContent = "+++ ТЕРМИНАЛГОТОВ +++\n> ";
+  show_output.textContent = "+++ ТЕРМИНАЛ ВВОДА ДАННЫХ ПОДГОТОВЛЕН +++\n +  ОЖИДАНИЕ: КОД ДОСТУПА: УРОВЕНЬ ^БЕТА^  +> ";
 
-  const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@$%&*";
+});
+
+const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@$%&*";
 
 function typeScramble(text, container, speed = 10, scrambleTime = 200) {
 
@@ -125,9 +127,6 @@ function scrollToBottom(){
   output.scrollTop = output.scrollHeight;
 }
 
-  
-});
-
 // Кнопка "Создание персонажа"
 newBtn.addEventListener("click", async () => {
   menu.style.display = "none";
@@ -135,7 +134,7 @@ newBtn.addEventListener("click", async () => {
   document.getElementById("back-container").style.display = "block";
 
   const show_output = document.getElementById("output");
-  show_output.textContent = "+ НОВЫЙ АКОЛИТ ОБНАРУЖЕН +\n+ В БУДУЩЕМ ЗДЕСЬ БУДЕТ ГЕНЕРАЦИЯ ПЕРСОНАЖА +";
+  show_output.textContent = "+ ПРИВЕТСТВУЕМ НОВОГО АКОЛИТА СВЯЩЕННЫХ ОРДОСОВ +\n+ СИСТЕМА РЕГИСТРАЦИИ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ +";
 });
 
 // Кнопка "Назад"
