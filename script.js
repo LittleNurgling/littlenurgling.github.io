@@ -71,7 +71,7 @@ function typeScramble(text, container, speed = 10, scrambleTime = 200) {
 
 async function fakeLoading(){
 
-  await typeLine("+ СКАНИРОВАНИЕ СВЯЩЕННЫХ ЭНГРАММ +");
+  await typeLine("+ СКАНИРОВАНИЕ ЭНГРАММ БЕЗОПАСНОСТИ +");
   await typeLine("+ ДЕШИФРОВКА БЛОКА ДАННЫХ +");
   await typeLine("+ ОБРАЩЕНИЕ К ДУХУ МАШИНЫ +");
   await typeLine("+ ПРОВЕРКА ЛИЧНОСТИ +");
