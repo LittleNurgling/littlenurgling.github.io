@@ -140,7 +140,7 @@ newBtn.addEventListener("click", async () => {
   backBtn.style.display = "block";
   backContainer.style.display = "flex";
   terminalContainer.style.display = "none";
-  creationContainer.style.display = "block";
+  creationContainer.style.display = "flex";
 
 });
 
