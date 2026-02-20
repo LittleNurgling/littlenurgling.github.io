@@ -1,4 +1,20 @@
-const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@$%&*";
+const loadBtn = document.getElementById("loadCharBtn");
+const newBtn = document.getElementById("newCharBtn");
+const backBtn = document.getElementById("backBtn");
+const menu = document.getElementById("menu-buttons");
+const content = document.getElementById("content-container");
+
+// Кнопка "Загрузить персонажа"
+loadBtn.addEventListener("click", async () => {
+  menu.style.display = "none";
+  content.style.display = "block";
+  document.getElementById("back-container").style.display = "block";
+
+  // Показываем терминал (текущий output)
+  const output = document.getElementById("output");
+  output.textContent = "+++ ТЕРМИНАЛГОТОВ +++\n> ";
+
+  const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#@$%&*";
 
 function typeScramble(text, container, speed = 10, scrambleTime = 200) {
 
@@ -108,3 +124,26 @@ async function processCommand(text) {
 function scrollToBottom(){
   output.scrollTop = output.scrollHeight;
 }
+
+  
+});
+
+// Кнопка "Создание персонажа"
+newBtn.addEventListener("click", async () => {
+  menu.style.display = "none";
+  content.style.display = "block";
+  document.getElementById("back-container").style.display = "block";
+
+  const output = document.getElementById("output");
+  output.textContent = "+ НОВЫЙ АКОЛИТ ОБНАРУЖЕН +\n+ В БУДУЩЕМ ЗДЕСЬ БУДЕТ ГЕНЕРАЦИЯ ПЕРСОНАЖА +";
+});
+
+// Кнопка "Назад"
+backBtn.addEventListener("click", () => {
+  menu.style.display = "flex";
+  content.style.display = "none";
+  document.getElementById("back-container").style.display = "none";
+});
+
+
+
