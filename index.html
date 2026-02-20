@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-
 <head>
-    <meta charset="UTF-8">
-    <title>Э литтл пати</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Projects Hub</title>
+  <link rel="stylesheet" href="./index_style.css?v=<?=time()?>">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
-
 <body>
 
-<p>Привет!</p>
-    
-<p>Если ты попал сюда - ты, вероятнее всего, мой друг. Уже можно пускать слезу умиления </p>
-<p>Если же ты и сам не понял, как здесь оказался - просто наслаждайся моментом </p>
-<p>Зовут меня LittleNurgling, я бородат, но не тролль и почти не лжец. Отсюда начинается мой путь в дебри JavaScript</p>
-<p>Эта страница - мой испытательный полигон. Рахим итегез!</p>
-<p><a href="hd_f65de7d89b[1].jpg"><img src="hd_78f628f95a[1].jpg"
-                                       width="350" height="350" alt="Да-да.."></a></p>
-    
-    
-    <script>
-    "use_strict"
-    let age = prompt('Возраст?', 18);
+<div class="page-container">
 
-let message = (age == 0) ? 'Что-то здесь не так...' :
-        (age < 10) ? 'Ты мал' :
-        (age < 18) ? 'Ты юн' :
-        (age < 60) ? 'Ты зрел' :
-        (age < 100) ? 'Ты стар' :
-        'Ты суперстар'
+  <!-- Заголовок -->
+  <header class="header">
+    <h1>Привет! Это хаб моих пет-проектов</h1>
+    <p>Только Нургл знает, сколько их будет, и дойдёт ли хотя бы один до релиза</p>
+  </header>
 
-    alert( message );
-</script>
+  <!-- Контейнер кнопок проектов -->
+  <main class="projects-container">
 
-<p> Ктулху фхтанг </p>
+    <div class="project-button">
+      <button id="goto-dataslate">Лист персонажа</button>
+      <span class="subtitle">(Создать / загрузить персонажа)</span>
+    </div>
 
+    <div class="project-button">
+      <button id="goto-project2">UNDER CONSTRUCTION</button>
+      <span class="subtitle">Однажды...</span>
+    </div>
+
+    <div class="project-button">
+      <button id="goto-project3">UNDER CONSTRUCTION</button>
+      <span class="subtitle">Однажды...</span>
+    </div>
+
+  </main>
+
+  <!-- Небольшой футер -->
+  <footer class="footer">
+    © 2026, LittleNurgling, все права <s>проё</s>
+  </footer>
+
+</div>
+
+<script src="index_script.js"></script>
 </body>
-
 </html>
