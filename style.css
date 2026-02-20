@@ -36,18 +36,28 @@ body {
   align-items: center;      /* подпись под кнопкой по центру */
 }
 
-/* сама кнопка */
 .button-block button {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
+  padding: 0.5rem 1.2rem;   /* уменьшаем внутренние отступы */
+  font-size: 1rem;          /* чуть меньше шрифт */
   font-weight: bold;
   cursor: pointer;
-  background-color: #0b2005; /* тёмно-зелёная под WH40k */
-  color: #7cff7c;            /* светящийся зелёный */
+  background-color: #0b2005;
+  color: #7cff7c;
   border: 2px solid #7cff7c;
   border-radius: 6px;
   text-align: center;
   transition: all 0.2s;
+}
+
+@media (max-width: 600px) {
+  .button-block button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
 }
 
 /* эффект наведения */
