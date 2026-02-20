@@ -116,6 +116,7 @@ async function processCommand(text) {
 
   const pattern_sasha = /САНЯ|САША|САНЁК|АЛЕКСАНДР/i;
   const pattern_hydra = /ГИДРА|АЛЬФА-|АЛЬФАР|ОМЕГО/i;
+  const pattern_biggus = /БИГГУС|ДИККУС/i;
 
   if(pattern_sasha.test(text)) {
     await typeLine("+ ДОСТУП РАЗРЕШЕН +", 1, 1);
@@ -123,6 +124,10 @@ async function processCommand(text) {
   } else if(pattern_hydra.test(text)) {
     await typeLine("+ ГИДРА ДОМИНАТУС, БРАТ +", 1, 1);
     await typeLine("+ ПРЕДОСТАВЛЯЮ ПОЛНЫЙ ДОСТУП +", 1, 1);
+  } else if(pattern_biggus.text(text)) {
+    await typeLine("+ ПЕРЕХОДИМ К ТЕСТОВОЙ КАРТОЧКЕ +", 5, 5);
+    await typeLine("+ БУДЬТЕ ГОТОВЫ КО ВСЕМУ +", 5, 5);
+    window.location.href = "./character_dataslate.html"
   } else {
   await typeLine("+ ДОСТУП ЗАПРЕЩЕН +", 1, 1, "#cc0000");
   await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +", 1, 1, "#cc0000");
