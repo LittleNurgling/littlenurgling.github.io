@@ -53,8 +53,9 @@ async function fakeLoading(){
   await typeLine("+ ПРОВЕРКА ЛИЧНОСТИ +");
 }
 
-async function typeLine(text, speed = 10, scrambleTime = 200){
+async function typeLine(text, speed = 10, scrambleTime = 200, color = "#7CFF7C"){
   const line = document.createElement("div");
+  line.style.color = color
   output.appendChild(line);
 
   await typeScramble(text, line, speed, scrambleTime);
@@ -87,13 +88,16 @@ async function processCommand(text) {
 
   await fakeLoading();   // ← ВОТ ТУТ
 
-  await typeLine("+ ДОСТУП ЗАПРЕЩЕН +", 1, 1);
+  const pattern = /САНЯ|САША|САНЁК|АЛЕКСАНДР/i;
 
-  await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +", 1, 1);
-
-  await typeLine("+ СИЛЫ СВЯЩЕННОГО ОРДО ЕРЕТИКУС ИМПЕРСКОЙ ИНКВИЗИЦИИ ПОСТАВЛЕНЫ В ИЗВЕСТНОСТЬ +", 1, 1);
-  
-  await typeLine("+ ВОЗНОСИТЕ МОЛЬБЫ ИМПЕРАТОРУ И СМИРЕННО ОЖИДАЙТЕ СВОЕЙ УЧАСТИ +", 1, 1);
+  if(pattern.test(text)) {
+    await typeLine("+ ДОСТУП РАЗРЕШЕН +", 1, 1);
+    await typeLine("+ ИМПЕРАТОР ГОРДИТСЯ ВАМИ, ОЖИДАЙТЕ МИСКА АМАСЕКА И ЭЛЬДАРКА-ЖЕНА +", 1, 1);
+  } else {
+  await typeLine("+ ДОСТУП ЗАПРЕЩЕН +", 1, 1, #cc0000);
+  await typeLine("+ ПОПЫТКА НЕЗАКОННОГО ДОСТУПА К АРХИВАМ +", 1, 1, #cc0000);
+  await typeLine("+ СИЛЫ СВЯЩЕННОГО ОРДО ЕРЕТИКУС ИМПЕРСКОЙ ИНКВИЗИЦИИ ПОСТАВЛЕНЫ В ИЗВЕСТНОСТЬ +", 1, 1, #cc0000);
+  await typeLine("+ ВОЗНОСИТЕ МОЛЬБЫ ИМПЕРАТОРУ И СМИРЕННО ОЖИДАЙТЕ СВОЕЙ УЧАСТИ +", 1, 1, #cc0000);
 
   input.disabled = false;
 }
