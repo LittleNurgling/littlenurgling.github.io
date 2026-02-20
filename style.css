@@ -80,6 +80,12 @@ body {
   }
 }
 
+#back-container {
+  display: none;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 /* маленькая кнопка "назад" */
 .small-btn {
   padding: 0.3rem 0.8rem;
