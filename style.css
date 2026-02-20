@@ -12,6 +12,15 @@ body {
   box-sizing: border-box;
 }
 
+.crt pre,
+.crt b,
+.crt .terminal,
+.crt #output,
+.crt .input-line {
+  width: 100%;           /* занимают всю ширину контейнера */
+  text-align: center;    /* текст по центру */
+}
+
 .crt {
   position: relative;
   color: #7CFF7C;
