@@ -2,6 +2,16 @@ body {
   background: #020502;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* по горизонтали */
+  justify-content: center; /* по вертикали */
+  min-height: 100vh;       /* чтобы занимать весь экран */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
 .crt {
   position: relative;
   color: #7CFF7C;
