@@ -56,6 +56,8 @@ async function fakeLoading(){
 async function typeLine(text, speed = 10, scrambleTime = 200, color = "#7CFF7C"){
   const line = document.createElement("div");
   line.style.color = color
+  line.style.textShadow = `0 0 6px ${color}`;
+  
   output.appendChild(line);
 
   await typeScramble(text, line, speed, scrambleTime);
